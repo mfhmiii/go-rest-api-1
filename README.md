@@ -34,9 +34,9 @@ Once the application is running, you can access the following endpoints:
 
 **GET /products**: Retrieve JSON data for all products.<br>
 **GET /products/:id**: Retrieve JSON data for a specific product by ID.<br>
-**POST /products**: Create a new product. Send JSON data in the request body with the product details.<br>
+**POST /product**: Create a new product. Send JSON data in the request body with the product details.<br>
 **PUT /products/:id**: Update an existing product by ID. Send JSON data in the request body with the updated product details.<br>
-**DELETE /products/:id**: Delete a product by ID.<br>
+**DELETE /product**: Delete a product by ID.<br>
 
 ## Example
 
@@ -61,7 +61,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{"name":"Updated Product","p
 ```
 Delete Product
 ```bash
-curl -X DELETE http://localhost:8080/products/1
+curl -X DELETE http://localhost:8080/product
 ```
 
 ## Contributing
